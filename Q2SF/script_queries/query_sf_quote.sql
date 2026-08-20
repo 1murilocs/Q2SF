@@ -1,0 +1,1 @@
+select Id, Nome_Cotacao_Curto__c, QuoteNumber, Name from Quote
