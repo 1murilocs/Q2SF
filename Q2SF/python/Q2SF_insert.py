@@ -4,6 +4,7 @@ import sys
 import pandas as pd
 import pyodbc 
 import sqlite3
+from cfg import SFPASSWORD, SFEMAIL, SFTOKEN, SERVER, DATABASE, UID, DBPASS
 from simple_salesforce import Salesforce
 from sqlalchemy import create_engine
 
@@ -20,12 +21,12 @@ def removeDatabase():
 
 # Conexão com o banco de dados SQL Server onde os dados Quiver estão armazenados
 conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 18 for SQL Server};SERVER=192.168.0.5;DATABASE=colWeb;UID=sa;PWD=glc5544;TrustServerCertificate=yes;"
+    f"DRIVER={{ODBC Driver 18 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={UID};PWD={DBPASS};TrustServerCertificate=yes;"
 )
 print('Conexão com o banco de dados SQL Server estabelecida com sucesso.')
 
 # Autenticação no Salesforce para leituras e inserções
-sf = Salesforce(username='admin_galcorr@galcorr.com.br',password='F6mCorretor@',security_token='egmjhpDpSCyxHGJLU9UvnnMO')
+sf = Salesforce(username=SFEMAIL,password=SFPASSWORD,security_token=SFTOKEN)
 
 cursor = conn.cursor()
 DISTAP = []
@@ -135,9 +136,9 @@ if not df_new.empty:
 else:
     print('\nNão há novas oportunidades para inserir apólice no Salesforce.')
     
-#removeDatabase()
+removeDatabase()
 
-external = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'envio emails'))
+external = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'envio_emails'))
 if external not in sys.path:
     sys.path.append(external)
 # pyrefly: ignore [missing-import]

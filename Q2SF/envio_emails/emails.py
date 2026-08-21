@@ -1,4 +1,4 @@
-from cfg import PASSWORD
+from otl_cfg import PASSWORD, EMAIL
 import re
 import os
 import smtplib
@@ -8,14 +8,14 @@ from email.mime.multipart import MIMEMultipart
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def send_email():
-    # Lê o arquivo de log e extrai as linhas com links
+    #lê o arquivo log e cria template de link salesforce
     with open('insert_logs/apolices_distintas.log', 'r') as f:
         linhas = f.readlines()
 
     data_log = linhas[0].strip() if len(linhas) > 0 else ""
     linhas_com_link = [linha.strip().strip('- ') for linha in linhas if 'http' in linha]
 
-    # HTML template
+    # html template (claude)
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -57,14 +57,14 @@ def send_email():
     </html>"""
 
     #configurações do e-mail
-    sender = 'murilo.santos@galcorr.com.br'
-    receivers = ['marcos.yamaguti@galcorr.com.br', 'murilo.santos@galcorr.com.br']
+    sender = EMAIL
+    receivers = ['marcos.yamaguti@galcorr.com.br', 'murilo.santos@galcorr.com.br'] #quem receberá o e-mail
     password = PASSWORD
 
     #conteúdo do e-mail
     msg = MIMEMultipart()
     msg['From'] = sender
-    msg['To'] = ', '.join(receivers)  # Juntar todos os destinatários em uma string
+    msg['To'] = ', '.join(receivers)  # junta todos os destinatários em uma string (simulando o 'to' do outlook)
     msg['Subject'] = 'Retorno Quiver: Apólices Distintas Encontradas'
 
     msg.attach(MIMEText(html, 'html'))

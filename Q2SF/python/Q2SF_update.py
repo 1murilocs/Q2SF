@@ -1,13 +1,17 @@
 import pandas as pd
 import pyodbc 
 import sqlite3
-from simple_salesforce import Salesforce
-from sqlalchemy import create_engine
 import os
 import datetime
+from simple_salesforce import Salesforce
+from sqlalchemy import create_engine
+from cfg import SFPASSWORD, SFEMAIL, SFTOKEN, SERVER, DATABASE, UID, DBPASS
 
 # Início do processo de inserção de apólices no Salesforce
 print('\nUpdate:')
+
+# Garante que o CWD seja sempre a pasta Q2SF, independente de onde o script é executado
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Função para remover o banco de dados SQLite local temporário
 def removeDatabase():
@@ -21,12 +25,12 @@ def removeDatabase():
 
 # Conexão com o banco de dados SQL Server onde os dados Quiver estão armazenados
 conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 18 for SQL Server};SERVER=192.168.0.5;DATABASE=colWeb;UID=sa;PWD=glc5544;TrustServerCertificate=yes;"
+    f"DRIVER={{ODBC Driver 18 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={UID};PWD={DBPASS};TrustServerCertificate=yes;"
 )
 print('Conexão com o banco de dados SQL Server estabelecida com sucesso.')
 
 # Autenticação no Salesforce para leituras e atualizações
-sf = Salesforce(username='admin_galcorr@galcorr.com.br',password='F6mCorretor@',security_token='egmjhpDpSCyxHGJLU9UvnnMO')
+sf = Salesforce(username=SFEMAIL,password=SFPASSWORD,security_token=SFTOKEN)
 
 cursor = conn.cursor()
 

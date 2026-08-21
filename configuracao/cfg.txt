@@ -1,0 +1,14 @@
+import os
+
+#codigo cfg.txt deve ser renomeado para cfg.py e colocado na subpasta: Q2SF/python
+#OBS: espaços vazios devem ser substituidos com os dados requisitados
+
+SFEMAIL = ' ' #e-mail galcorr
+SFPASSWORD = ' ' #senha salesforce
+SFTOKEN = ' ' #token salesforce
+
+SERVER = ' ' #server do banco de dados
+DATABASE = ' ' #banco 
+UID = ' ' #usuário 
+DBPASS = ' ' #senha 
+DISTAP = []

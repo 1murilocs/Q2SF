@@ -5,10 +5,14 @@ venv
 Q2SF/envio_emails/__pycache__
 
 #dados sensiveis
-Q2SF/envio_emails/cfg.py
+Q2SF/python/cfg.py
+Q2SF/envio_emails/otl_cfg.py
 
 #emails jupyter
 Q2SF/envio_emails/emails.ipynb
 
 #pycache python geral
 Q2SF/python/__pycache__
+
+#notebook
+notebook
