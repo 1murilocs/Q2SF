@@ -1,6 +1,3 @@
-#ignore
-.gitignore
-
 #venv
 venv
 
@@ -17,5 +14,5 @@ Q2SF/envio_emails/emails.ipynb
 #pycache python geral
 Q2SF/python/__pycache__
 
-#notebook
+#notebooks
 Q2SF/notebook
