@@ -4,7 +4,7 @@ import sys
 import pandas as pd
 import pyodbc 
 import sqlite3
-from cfg import SFPASSWORD, SFEMAIL, SFTOKEN, SERVER, DATABASE, UID, DBPASS
+from cfg import SFPASSWORD, SFUSER, SFTOKEN, SERVER, DATABASE, UID, DBPASS
 from simple_salesforce import Salesforce
 from sqlalchemy import create_engine
 
@@ -26,7 +26,7 @@ conn = pyodbc.connect(
 print('Conexão com o banco de dados SQL Server estabelecida com sucesso.')
 
 # Autenticação no Salesforce para leituras e inserções
-sf = Salesforce(username=SFEMAIL,password=SFPASSWORD,security_token=SFTOKEN)
+sf = Salesforce(username=SFUSER,password=SFPASSWORD,security_token=SFTOKEN)
 
 cursor = conn.cursor()
 DISTAP = []
@@ -47,7 +47,6 @@ conn.close()
 sqlite_conn = sqlite3.connect('database/q2sf_Insert.db')
 df.to_sql('quiver', sqlite_conn, if_exists='replace', index=False)
 print('\nDados da tabela Quiver inseridos no banco de dados SQLite com sucesso.')
-0
 # Consulta registros de oportunidade e cotação no Salesforce
 with open('script_queries/query_sf.sql', 'r') as f2:
     soql_query = f2.read()

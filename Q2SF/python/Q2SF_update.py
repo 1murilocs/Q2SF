@@ -5,7 +5,7 @@ import os
 import datetime
 from simple_salesforce import Salesforce
 from sqlalchemy import create_engine
-from cfg import SFPASSWORD, SFEMAIL, SFTOKEN, SERVER, DATABASE, UID, DBPASS
+from cfg import SFPASSWORD, SFUSER, SFTOKEN, SERVER, DATABASE, UID, DBPASS
 
 # Início do processo de inserção de apólices no Salesforce
 print('\nUpdate:')
@@ -30,7 +30,7 @@ conn = pyodbc.connect(
 print('Conexão com o banco de dados SQL Server estabelecida com sucesso.')
 
 # Autenticação no Salesforce para leituras e atualizações
-sf = Salesforce(username=SFEMAIL,password=SFPASSWORD,security_token=SFTOKEN)
+sf = Salesforce(username=SFUSER,password=SFPASSWORD,security_token=SFTOKEN)
 
 cursor = conn.cursor()
 

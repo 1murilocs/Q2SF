@@ -15,7 +15,7 @@ join Tabela_Produtos tp
 join Tabela_Seguradoras ts
 	on td.Seguradora = ts.Seguradora
 where year(td.Inicio_vigencia) = year(getdate()) 
-and td.Inicio_vigencia >= dateadd(day, -60, cast(getdate() as date))
+and td.Inicio_vigencia >= dateadd(day, -120, cast(getdate() as date))
 and td.Inicio_vigencia <= cast(getdate() as date)
 and td.Apolice is not null
 and td.Proposta is not null
@@ -23,5 +23,6 @@ and td.Data_emissao is not null
 and td.Inicio_vigencia is not null
 and td.Termino_vigencia is not null
 and td.Proposta_cia is not null
+and trim(td.Endosso) = ''
 and td.Proposta_cia like 'opo-%'
 order by td.Inicio_vigencia desc;

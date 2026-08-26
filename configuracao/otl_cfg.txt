@@ -3,6 +3,7 @@ import os
 #codigo otl_cfg.txt deve ser renomeado para otl_cfg.py e colocado na subpasta: Q2SF/envio_emails
 #OBS: espaços vazios devem ser substituidos com os dados requisitados
 
-PASSWORD = ' ' #senha e-mail galcorr
-EMAIL = ' ' #e-mail galcorr
+PASSWORD = ' ' #senha e-mail 
+EMAIL = ' ' #e-mail 
+RECEIVERS = ' ' #quem vai receber o e-mail
 DISTAP = []

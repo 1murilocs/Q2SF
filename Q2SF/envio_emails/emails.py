@@ -1,4 +1,4 @@
-from otl_cfg import PASSWORD, EMAIL
+from otl_cfg import PASSWORD, EMAIL, RECEIVERS
 import re
 import os
 import smtplib
@@ -58,7 +58,7 @@ def send_email():
 
     #configurações do e-mail
     sender = EMAIL
-    receivers = ['marcos.yamaguti@galcorr.com.br', 'murilo.santos@galcorr.com.br'] #quem receberá o e-mail
+    receivers =  RECEIVERS
     password = PASSWORD
 
     #conteúdo do e-mail
