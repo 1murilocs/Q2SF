@@ -1,0 +1,192 @@
+Relatório de Atualização - 27/08/2026 10:41:31
+==================================================
+
+Apólice ID: a00SG00000mOd35YAC
+  - Numero_da_Apolice__c: DE '' PARA '1007507024981'
+  - Proposta__c: DE '' PARA '255946'
+  - Data_de_Emissao__c: DE '' PARA '2026-08-25'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-25'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-08-25'
+  - Cotacao__c: DE '0Q0SG00000HQtyN0A' PARA '0Q0SG00000HQtyN0AT'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '300'
+
+Apólice ID: a00SG00000mFYp9YAG
+  - Numero_da_Apolice__c: DE '' PARA '1031003001762'
+  - Proposta__c: DE '' PARA '255630'
+  - Data_de_Emissao__c: DE '' PARA '2026-08-17'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-22'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-22'
+  - Cotacao__c: DE '0Q0SG00000HCwu' PARA '0Q0SG00000HCwuT0AT'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '76800'
+
+Apólice ID: a00SG00000iRB1LYAW
+  - Proposta__c: DE '' PARA '253132'
+  - Data_de_Emissao__c: DE '' PARA '2026-06-25'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-21'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-21'
+  - Cotacao__c: DE '0Q0SG00000G5V' PARA '0Q0SG00000G5VTO0A3'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000m1hLyYAI
+  - Proposta__c: DE '253131' PARA '253129'
+
+Apólice ID: a00SG00000lvWwNYAU
+  - Numero_da_Apolice__c: DE '' PARA '1007507024830'
+  - Proposta__c: DE '' PARA '255668'
+  - Data_de_Emissao__c: DE '' PARA '2026-08-14'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-14'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-08-14'
+  - Cotacao__c: DE '0Q0SG00000HEj3V0A' PARA '0Q0SG00000HEj3V0AT'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '667.73'
+
+Apólice ID: a00SG00000iRPykYAG
+  - Numero_da_Apolice__c: DE '' PARA '93750336'
+  - Status__c: DE '' PARA 'Ativa'
+
+Apólice ID: a00SG00000h2GPrYAM
+  - Numero_da_Apolice__c: DE '' PARA '587902702'
+  - Status__c: DE '' PARA 'Ativa'
+
+Apólice ID: a00SG00000m1hM6YAI
+  - Cotacao__c: DE '0Q0SG00000HH5M' PARA '0Q0SG00000HH5MT0A1'
+
+Apólice ID: a00SG00000m1hM4YAI
+  - Cotacao__c: DE '0Q0SG00000HH4lN0A' PARA '0Q0SG00000HH4lN0AT'
+
+Apólice ID: a00SG00000mLLE2YAO
+  - Cotacao__c: DE '0Q0SG00000GOucX0A' PARA '0Q0SG00000GOucX0AT'
+
+Apólice ID: a00SG00000m1hM7YAI
+  - Cotacao__c: DE '0Q0SG00000HH3sX0A' PARA '0Q0SG00000HH3sX0AT'
+
+Apólice ID: a00SG00000kE4pPYAS
+  - Proposta__c: DE '' PARA '254843'
+  - Cotacao__c: DE '' PARA '0Q0SG00000GefzM0AR'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '19792.48'
+
+Apólice ID: a00SG00000m5kI9YAI
+  - Proposta__c: DE '' PARA '252979'
+
+Apólice ID: a00SG00000lFIGUYA4
+  - Numero_da_Apolice__c: DE '' PARA '75405'
+  - Proposta__c: DE '' PARA '255451'
+  - Data_de_Emissao__c: DE '' PARA '2026-08-01'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-01'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-01'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000ddgx3YAA
+  - Proposta__c: DE '253020' PARA '253019'
+  - Cotacao__c: DE '' PARA '0Q0SG00000ExH810AF'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000le6lKYAQ
+  - Cotacao__c: DE '0Q0SG00000HEglZ0A' PARA '0Q0SG00000HEglZ0AT'
+
+Apólice ID: a00SG00000ksZpdYAE
+  - Numero_da_Apolice__c: DE '' PARA '77584'
+  - Proposta__c: DE '' PARA '253006'
+  - Data_de_Emissao__c: DE '' PARA '2026-06-25'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-01'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-01'
+  - Cotacao__c: DE '0Q0SG00000G3kO' PARA '0Q0SG00000G3kOT0AZ'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000m1hM9YAI
+  - Data_de_Emissao__c: DE '' PARA '2026-07-01'
+
+Apólice ID: a00SG00000ksZpiYAE
+  - Numero_da_Apolice__c: DE '' PARA '864818'
+  - Proposta__c: DE '252992' PARA '252991'
+  - Data_de_Emissao__c: DE '' PARA '2026-06-25'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-01'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-01'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000ksZpjYAE
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-08-01'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-08-01'
+  - Cotacao__c: DE '' PARA '0Q0SG00000Fk9UH0AZ'
+  - Premio_Quiver__c: DE '' PARA '0'
+
+Apólice ID: a00SG00000lUTzUYAW
+  - Numero_da_Apolice__c: DE '' PARA '306920269907751862272'
+  - Proposta__c: DE '' PARA '255589'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-31'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-31'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-07-31'
+  - Cotacao__c: DE '0Q0SG00000H7xE' PARA '0Q0SG00000H7xET0AZ'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '315'
+
+Apólice ID: a00SG00000l9jHdYAI
+  - Numero_da_Apolice__c: DE '' PARA '306920269907751862272'
+  - Proposta__c: DE '' PARA '255402'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-30'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-30'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-07-30'
+  - Cotacao__c: DE '0Q0SG00000H1' PARA '0Q0SG00000H1TuD0AV'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '625'
+
+Apólice ID: a00SG00000l9jHfYAI
+  - Numero_da_Apolice__c: DE '' PARA '306920269907751862272'
+  - Proposta__c: DE '' PARA '255401'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-29'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-29'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-07-29'
+  - Cotacao__c: DE '0Q0SG00000H1' PARA '0Q0SG00000H1TkX0AV'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '505'
+
+Apólice ID: a00SG00000kgrWvYAI
+  - Numero_da_Apolice__c: DE '' PARA '1007507024597'
+  - Proposta__c: DE '' PARA '255101'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-29'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-29'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-07-29'
+  - Cotacao__c: DE '0Q0SG00000Gg' PARA '0Q0SG00000GgTFh0AN'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '495.27'
+
+Apólice ID: a00SG00000l9jHeYAI
+  - Numero_da_Apolice__c: DE '' PARA '306920269907751862272'
+  - Proposta__c: DE '' PARA '255400'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-29'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-29'
+  - Termino_da_Vigencia__c: DE '' PARA '2029-07-29'
+  - Cotacao__c: DE '0Q0SG00000H1' PARA '0Q0SG00000H1TFt0AN'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '505'
+
+Apólice ID: a00SG00000kbt84YAA
+  - Cotacao__c: DE '0Q0SG00000Gnck' PARA '0Q0SG00000GnckT0AR'
+
+Apólice ID: a00SG00000kTHMVYA4
+  - Numero_da_Apolice__c: DE '' PARA '2026100103510011648'
+  - Proposta__c: DE '' PARA '254890'
+  - Data_de_Emissao__c: DE '' PARA '2026-07-24'
+  - Inicio_da_Vigencia__c: DE '' PARA '2026-07-21'
+  - Termino_da_Vigencia__c: DE '' PARA '2027-07-21'
+  - Cotacao__c: DE '0Q0SG00000GUwoX0A' PARA '0Q0SG00000GUwoX0AT'
+  - Status__c: DE '' PARA 'Ativa'
+  - Premio_Quiver__c: DE '' PARA '317367.07'
+
+Apólice ID: a00SG00000kIaKRYA0
+  - Cotacao__c: DE '' PARA '0Q0SG00000FBWqN0AX'
+  - Premio_Quiver__c: DE '2050.82' PARA '0'
+
+Apólice ID: a00SG00000kTHMXYA4
+  - Cotacao__c: DE '0Q0SG00000GMnnG0A' PARA '0Q0SG00000GMnnG0AT'
+
+Apólice ID: a00SG00000kE4pOYAS
+  - Numero_da_Apolice__c: DE '107750000016' PARA '107750000023'
+  - Data_de_Emissao__c: DE '2026-07-14' PARA '2026-08-04'
+
