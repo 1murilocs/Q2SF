@@ -23,6 +23,8 @@ def removeDatabase():
     except Exception as e:
         print(f'\nAviso: Não foi possível remover o banco de dados local: {e}')
 
+removeDatabase()  
+
 # Conexão com o banco de dados SQL Server onde os dados Quiver estão armazenados
 conn = pyodbc.connect(
     f"DRIVER={{ODBC Driver 18 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={UID};PWD={DBPASS};TrustServerCertificate=yes;"
@@ -202,5 +204,4 @@ if updates:
 else:
     print('\nNão há registros de apólice para atualizar com base nos dados recebidos.')
 
-# Limpeza final: remove o banco SQLite
-removeDatabase()    
+  

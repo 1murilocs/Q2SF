@@ -8,8 +8,8 @@ select distinct
     sfo.OportunidadeApoliceAtual__c,
     sfq.Cotacao__c,
     q.Status__c
-from quiver q
-left join sf_opp sfo
+from quiver as q
+left join sf_opp as sfo
 on q.Numero_da_Oportunidade__c = sfo.Numero_da_Oportunidade__c
-left join sf_quote sfq
+left join sf_quote as sfq
 on sfo.Numero_da_Oportunidade__c = sfq.Nome_Cotacao_Curto__c

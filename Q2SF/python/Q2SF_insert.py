@@ -16,8 +16,15 @@ os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def removeDatabase():
     # Remove o banco de dados SQLite temporário criado para esta execução
-    os.remove('database/q2sf_Insert.db')
-    print('\nBanco de dados local (insert) removido com sucesso.\n')
+    try:
+        db_path = 'database/q2sf_Insert.db'
+        if os.path.exists(db_path):
+            os.remove(db_path)
+            print('\nBanco de dados local (insert) removido com sucesso.\n')
+    except Exception as e:
+        print(f'\nAviso: Não foi possível remover o banco de dados local: {e}')
+
+removeDatabase()
 
 # Conexão com o banco de dados SQL Server onde os dados Quiver estão armazenados
 conn = pyodbc.connect(
@@ -61,9 +68,9 @@ sfresults_quote = sf.query_all(soql_query_quote)
 # Converte resultados do Salesforce em DataFrames e ajusta nomes de colunas
 df_sf2 = pd.DataFrame(sfresults['records']).drop(columns='attributes')
 df_sf3 = pd.DataFrame(sfresults_quote['records']).drop(columns='attributes')
-df_sf2.rename(columns={'Id': 'OportunidadeApoliceAtual__c'})
-df_sf2.rename(columns={'PropostaQuiver__c': 'Proposta__c'})
-df_sf3.rename(columns={'Id': 'Cotacao__c'})
+df_sf2.rename(columns={'Id': 'OportunidadeApoliceAtual__c'}, inplace=True)
+df_sf2.rename(columns={'PropostaQuiver__c': 'Proposta__c'}, inplace=True)
+df_sf3.rename(columns={'Id': 'Cotacao__c'}, inplace=True)
 local_engine = create_engine('sqlite:///database/q2sf_Insert.db')
 df_sf2.to_sql("sf_opp", con=local_engine, if_exists='replace', index=False)
 df_sf3.to_sql("sf_quote", con=local_engine, if_exists='replace', index=False)
@@ -134,8 +141,6 @@ if not df_new.empty:
     print(results)
 else:
     print('\nNão há novas oportunidades para inserir apólice no Salesforce.')
-    
-removeDatabase()
 
 external = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'envio_emails'))
 if external not in sys.path:
