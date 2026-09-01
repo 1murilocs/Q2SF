@@ -6,6 +6,7 @@ select distinct
     q.Termino_da_Vigencia__c,
     q.Premio_Quiver__c,
     sfo.OportunidadeApoliceAtual__c,
+    sfo.Area_Formula__c,
     sfq.Cotacao__c,
     q.Status__c
 from quiver as q
